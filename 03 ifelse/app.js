@@ -2,28 +2,34 @@ class App
 {
     runApplication()
     {
-        let appNaam = "Akira's app"
-        let appVersie = "2.4"
-        let appDatum = "20/11/2023" 
-        let appAutheur = "Akira"
-        let appCopyright = "Akira copyright"
-        let appDistributeur = "Ik"
-        let appDarkmode = false 
-        
-        console.log(" App naam: " + appNaam);
-        console.log(" App versie: " + appVersie);
-        console.log(" App datum: " + appDatum);
-        console.log(" App autheur: " + appAutheur);
-        console.log(" App copyright: " + appCopyright);
-        console.log(" App Distributeur: " + appDistributeur);
-        console.log(" darkmode: " + appDarkmode);
-        this.greeting = "Opgestart!";
+        console.log("hello world!");
+
+        let title = document.getElementById("newstitle");
+        console.log(title);
+
+        let title2 = document.getElementsByClassName("gamenews")[0];
+        let title3 = document.getElementsByClassName("gamenews")[1];
+        console.log(title2)
+
+        let random = Math.random();
+        console.log(random);
+        if(random < 0.5)
+        {
+            
+            title.style.backgroundColor = "red";
+            title2.style.backgroundColor = "green";
+            title3.style.backgroundColor = "orange";
 
 
+        }
+        else(random < 0.9)
+        {
+            title.style.backgroundColor = "blue";
+            title2.style.backgroundColor = "yellow";
 
+        }
     }
 }
 
 let app = new App();
 app.runApplication();
-console.log(app.greeting);
