@@ -1,10 +1,19 @@
+
+function argumentsAreHandy(shoutout)
+{
+    console.log("do you want to give a shoutout");
+    console.log(shoutout);
+    
+}
+argumentsAreHandy("Super Shout Out")
+
 class App
 {
     runApplication()
     {
         console.log("hello world!");
         superMooieGlobalFunction();
-        //code gaat hier!
+        
     }
 }
 
@@ -23,10 +32,10 @@ function superMooieGlobalFunction()
 superMooieGlobalFunction();
 superMooieGlobalFunction();
 superMooieGlobalFunction();
-//hier maak ik de function (definitie)
+
 function aanroepVoorbeeld()
 {
 
 }
 
-aanroepVoorbeeld();//hier gebruikt ik de function
+aanroepVoorbeeld();
